@@ -12,7 +12,7 @@
   <header>
     <div class="eyebrow">Posi-Side</div>
     <h1>Privacy Policy</h1>
-    <p>Last updated: 24 August 2026</p>
+    <p>Last updated: 5 September 2026</p>
   </header>
   <section>
     <h2>Information stored on your iPhone</h2>
@@ -22,6 +22,7 @@
   <section>
     <h2>Network use</h2>
     <p>After an iPhone restart or a suspicious clock change, Posi-Side may make an HTTPS request to an Apple endpoint to obtain the current time before opening matured notes. That request contains no journal text, note dates, recovery material or Posi-Side account identifier. Apple receives ordinary network information such as the IP address and user agent under Apple’s privacy terms.</p>
+    <p>The forthcoming 1.0.1 update uses a dedicated time-confirmation service hosted by Cloudflare. When you request a check, it receives a random notebook identifier and a fresh random challenge, then returns a signed timestamp. It receives no journal text, selected journal dates, recovery words, advertising identifier or account details. The network provider processes ordinary connection information, including your IP address. The service uses short-lived, minute-specific hashed network counters to limit abuse; it does not write request or response bodies to application logs or a journal database.</p>
   </section>
   <section>
     <h2>Notifications</h2>
