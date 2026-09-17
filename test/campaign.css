@@ -1,0 +1,49 @@
+.test-label { font-size:.8rem; color:var(--soft); text-align:right; }
+.campaign-hero { display:grid; grid-template-columns:1.2fr .8fr; gap:5rem; align-items:center; padding-block:3.5rem; }
+.campaign-hero h1 { max-width:11ch; font-size:clamp(3rem,6.5vw,5.5rem); }
+.hero-copy > p { max-width:42ch; }
+.hero-copy .primary { margin-top:.8rem; }
+.muted { color:var(--soft); }
+.capture { margin:0 auto; max-width:290px; }
+.capture img { width:100%; height:auto; border:1px solid var(--line); border-radius:22px; box-shadow:0 20px 50px var(--shadow); }
+figcaption { color:var(--soft); font-size:.75rem; margin-top:1rem; text-align:center; }
+.compact { padding-block:3.5rem; }
+.ritual { display:grid; grid-template-columns:repeat(3,1fr); gap:3rem; }
+.ritual h2 { font-size:1.8rem; margin-top:1rem; }
+.ritual p { color:var(--soft); }
+.request-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start; }
+.request-grid h2 { font-size:clamp(2.1rem,4vw,3rem); }
+form { padding:1.6rem; background:var(--paper); border:1px solid var(--line); border-radius:20px; }
+form h3 { margin:0 0 1.4rem; font-size:1.4rem; }
+label { display:block; font-weight:650; }
+input[type=email] { width:100%; min-height:48px; margin-top:.5rem; border:1px solid var(--soft); border-radius:8px; padding:.6rem; font:inherit; color:var(--ink); background:var(--canvas); }
+button { min-height:44px; font:inherit; cursor:pointer; }
+button:disabled { opacity:.65; cursor:wait; }
+button.primary { border:0; width:100%; }
+.check { display:flex; align-items:flex-start; gap:.65rem; padding-block:.8rem 1.3rem; font-size:.9rem; font-weight:400; }
+input[type=checkbox] { width:22px; height:22px; flex-shrink:0; margin:3px 0 0; accent-color:var(--clay); }
+:is(input,button):focus-visible { outline:3px solid var(--clay); outline-offset:4px; }
+.honeypot { display:none; }
+#form-status:empty { margin:0; }
+#form-status { font-weight:600; overflow-wrap:anywhere; }
+[data-state=error] { color:var(--clay); }
+.secondary-info { padding-block:2.5rem; max-width:800px; }
+.secondary-info h2, .measurement h2 { font-size:1.3rem; }
+.measurement { max-width:800px; border-top:1px solid var(--line); padding-block:1.7rem 2.5rem; font-size:.9rem; }
+.measurement-actions { display:flex; flex-wrap:wrap; gap:1rem; }
+.measurement button { background:transparent; color:var(--ink); border:1px solid var(--soft); border-radius:8px; padding:.4rem .9rem; }
+form a, footer a { overflow-wrap:anywhere; }
+footer a { display:inline-block; min-height:44px; padding-block:.5rem; }
+@media(max-width:780px) {
+ .campaign-hero { grid-template-columns:1fr; gap:2rem; padding-block:2rem; }
+ .campaign-hero .eyebrow { font-size:.7rem; }
+ .campaign-hero .lede { margin-top:1rem; font-size:1.2rem; }
+ .campaign-hero h1 { font-size:3.2rem; }
+ .hero-copy .primary { width:100%; padding-inline:.8rem; font-size:.95rem; }
+ .capture { max-width:240px; }
+ .request-grid,.ritual { grid-template-columns:1fr; gap:2rem; }
+ .compact { padding-block:2.5rem; }
+ .ritual { gap:1rem; }
+ .ritual > div { border-bottom:1px solid var(--line); padding-bottom:1rem; }
+ form { padding:1.2rem; }
+}

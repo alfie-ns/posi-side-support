@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#fbf8f2">
+  <title>Keep the small good — Posi-Side Android test</title>
+  <meta name="description" content="A kind word. A small win. Give it somewhere to stay. Request an invitation to test Posi-Side, a private positive-moment notebook for Android.">
+  <link rel="canonical" href="https://alfie-ns.github.io/posi-side-support/test/">
+  <link rel="icon" href="../assets/posi-side-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="campaign.css">
+  <script src="campaign.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="wrap site-header">
+    <a class="brand" href="../"><img src="../assets/posi-side-icon.png" alt="" width="38" height="38"><span>Posi-Side</span></a>
+    <span class="test-label">Android · invitation only</span>
+  </header>
+  <main id="content">
+    <section class="wrap campaign-hero" aria-labelledby="title">
+      <div class="hero-copy">
+        <p class="eyebrow">For people who already keep little notes</p>
+        <h1 id="title">Keep the <em>small good.</em></h1>
+        <p class="lede">A kind word. A small win. Give it somewhere to stay.</p>
+        <p>Posi-Side is a private positive-moment notebook. Capture a moment, take 30 seconds to keep or undo it, then revisit it after a wait you choose.</p>
+        <a class="primary" href="#invite-form" data-event="cta_tap">Request an Android test invite <span aria-hidden="true">↓</span></a>
+        <p class="small muted">Free internal test · Android 12+ · Secure screen lock required</p>
+        <p class="small">This is an early test, with invitations reviewed individually. It is not a public Google Play release.</p>
+      </div>
+      <figure class="capture">
+        <img src="../assets/android-capture.png" width="1080" height="1920" alt="Posi-Side Android capture screen: a blank moment field, a 30-second undo explanation, and Capture and Notebook tabs.">
+        <figcaption>Existing Android test-build screenshot. No personal entries.</figcaption>
+      </figure>
+    </section>
+    <section class="section compact" aria-label="How Posi-Side works">
+      <div class="wrap ritual">
+        <div><span class="number">1</span><h2>Notice it.</h2><p>A few words about something good that happened.</p></div>
+        <div><span class="number">2</span><h2>Let it rest.</h2><p>After 30 seconds, the moment seals for your chosen wait.</p></div>
+        <div><span class="number">3</span><h2>Return to it.</h2><p>A seven-day Review Window gives you time with the collection.</p></div>
+      </div>
+    </section>
+    <section class="section compact" id="request" aria-labelledby="request-title">
+      <div class="wrap request-grid">
+        <div>
+          <p class="eyebrow">Help shape the Android experience</p>
+          <h2 id="request-title">Try a quieter way to keep a moment.</h2>
+          <p>We’re looking for adults who already use a journal or notes app, especially in the UK. Try capturing and undoing a made-up moment, choosing a wait, and finding your opening date. Tell us which steps feel clear and which do not.</p>
+          <p>Notes are encrypted on your phone. The app has no Posi-Side account, ads or AI Coach in this release. An invitation uses your Google Play email; it does not give us access to your notebook.</p>
+          <p class="small">Use sample text during testing. Do not send journal entries, passwords or recovery words. An invite is not guaranteed and there is no promised public release date.</p>
+        </div>
+        <form id="invite-form" aria-describedby="request-help" novalidate>
+          <h3>Request a test invitation</h3>
+          <label for="email">Email used with Google Play</label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="254" required aria-describedby="request-help">
+          <p id="request-help" class="small muted">Used only to handle your test request and contact you about access and feedback. No newsletter.</p>
+          <div class="honeypot" aria-hidden="true"><label>Leave empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+          <p class="small"><a href="privacy.html">Read the test privacy notice</a> before requesting access.</p>
+          <label class="check"><input id="consent" name="consent" type="checkbox" required><span>I’m 18 or over, have read the test privacy notice and agree to be contacted about this Android test.</span></label>
+          <button class="primary" type="submit">Request invitation</button>
+          <p id="form-status" role="status" aria-live="polite" tabindex="-1"></p>
+          <p class="small">Prefer email? <a data-event="email_click" href="mailto:support@anythingaloud.com?subject=Posi-Side%20Android%20test%20request">Contact support@anythingaloud.com</a>.</p>
+          <noscript><p>JavaScript is needed for this form. Please use the email link to request access.</p></noscript>
+        </form>
+      </div>
+    </section>
+    <section class="wrap secondary-info" aria-labelledby="iphone-title">
+      <h2 id="iphone-title">Looking for iPhone?</h2>
+      <p>The UK App Store has version 1.0 for £3.99, requiring iOS 18+. It has a known issue that can prevent a sealed notebook opening after a restart or clock change. The fix is not yet publicly available.</p>
+      <p><a href="../support/">Read the current release note</a> · <a data-event="store_click" href="https://apps.apple.com/gb/app/posi-side-positive-journal/id6804738473">View the iPhone listing</a></p>
+      <p class="small">Store availability checked 13 September 2026. Posi-Side is for personal reflection; it does not treat medical conditions.</p>
+    </section>
+    <aside class="wrap measurement" aria-labelledby="measurement-title">
+      <h2 id="measurement-title">Optional page measurement</h2>
+      <p>Allow counts of this page view and button taps, grouped by campaign source? No cookies, visitor IDs or journal content. Your choice lasts only while this page is open. The request form works either way.</p>
+      <div class="measurement-actions"><button type="button" id="allow-counts">Allow counts</button><button type="button" id="decline-counts">No thanks</button></div>
+      <p id="measurement-status" role="status" aria-live="polite"></p>
+    </aside>
+  </main>
+  <footer><div class="wrap footer-inner"><p>Posi-Side by Anything Aloud Ltd</p><p><a href="privacy.html">Test privacy</a><a href="../support/">Support</a><a href="../privacy/">iPhone privacy</a></p></div></footer>
+</body>
+</html>

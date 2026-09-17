@@ -5,7 +5,7 @@ import test from "node:test";
 import { fileURLToPath } from "node:url";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
-const pages = ["index.html", "privacy/index.html", "support/index.html"];
+const pages = ["index.html", "privacy/index.html", "support/index.html", "test/index.html", "test/privacy.html"];
 
 function source(relativePath) {
   return readFileSync(path.join(root, relativePath), "utf8");
